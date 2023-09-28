@@ -36,8 +36,6 @@ class FAT(Loader):
         self.split = split
         super(FAT, self).__init__(path, split, self.class_names, 'FAT')
 
-        super(FAT, self).__init__(path, split, class_names, 'FAT')
-
     def load_data(self):
         if self.class_type == 'all':
             data = self.load_data_mixed()
